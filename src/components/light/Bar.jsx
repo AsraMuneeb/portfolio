@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import bg1 from '../assets/bg1.jpg';
+import bg1 from '.../assets/bg1.jpg';
 import './Bar.css';
 
 const Bar = ({ prog, skillName, strImage }) => {
