@@ -38,16 +38,17 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    height: 90%;
 }
 
 
-.navbar-custom .navbar-brand{
+.light-navbar-custom .navbar-brand{
 color: #fff ; 
 padding-left: 3%;
 font-family: font1;
 }
 
-.navbar-custom .nav-link {
+.light-navbar-custom .nav-link {
 color: #fff ; 
 font-family: font3;
 padding: 0.5rem 1rem;
@@ -64,7 +65,7 @@ transition: color 0.3s ease-in-out;
     border-bottom: 2.5px solid rgb(241, 192, 192);
 }
     
-.navbar-custom .nav-link:hover {
+.light-navbar-custom .nav-link:hover {
 color: rgb(241, 192, 192); 
 }
 
@@ -92,16 +93,16 @@ color: rgb(241, 192, 192);
 }
 
 @media (max-width: 991px) {
-    .navbar-custom {
+    .light-navbar-custom {
         width: 100%;
         left: 0;
         padding: 10px 20px;
     }
 
-    .navbar-custom .nav-link {
+    .light-navbar-custom .nav-link {
         font-size: 2vw !important; /* Make links larger for mobile */
         width: fit-content;
-        margin: 3% 5%;
+        margin: 3% 2%;
     }
 
     .navbar-collapse {

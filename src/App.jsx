@@ -66,8 +66,11 @@ function App() {
       {isDarkMode ? <> 
       <img src={frm1} className='frm11' alt="" />
       <img src={frm2} className='frm2' alt="" /> </>: undefined}
-        <NavBar activeSection={activeSection}></NavBar>
-
+      {isDarkMode ? (
+        <DarkNavBar activeSection={activeSection} />
+      ) : (
+        <NavBar activeSection={activeSection} />
+      )}
 <label for="theme" class="theme">
 	<span class="theme__toggle-wrap">
 		<input id="theme" class="theme__toggle" type="checkbox" role="switch" name="theme" value="dark"  checked={isDarkMode} onChange={handleThemeSwitch}>
