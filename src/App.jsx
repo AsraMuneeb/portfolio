@@ -68,13 +68,13 @@ function App() {
       <section className='home' id='home'>
       {isDarkMode ? <DarkHome /> : <Home />}
       </section>
-      <section className="about" id='about'>
+      <section className={isDarkMode ? 'about-dark' : 'about'} id='about'>
       {isDarkMode ? <DarkAbout /> : <About />}
       </section>
-      <section className="tools" id='tools'>
+      <section className={isDarkMode ? 'tools-dark' : 'tools'} id='tools'>
       {isDarkMode ? <DarkTools /> : <Tools />}
       </section>
-      <section className="projects" id='projects'>
+      <section className={isDarkMode ? 'projects-dark' : 'projects'} id='projects'>
       {isDarkMode ? <DarkProjects /> : <Projects />}
       </section>
       <section className="contact" id='contact'>
