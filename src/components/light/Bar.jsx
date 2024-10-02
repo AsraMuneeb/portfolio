@@ -32,15 +32,15 @@ const Bar = ({ prog, skillName, strImage }) => {
   const dash = (progress * circumference) / 100;
 
   return (
-    <div ref={skillsRef} className="skill">
-      <div className="skill-name">
+    <div ref={skillsRef} className="light-skill">
+      <div className="light-skill-name">
         <p>{skillName}</p>
       </div>
       <svg
         width={size}
         height={size}
         viewBox={`0 0 ${size} ${size}`} 
-        className="circular-progress"
+        className="light-circular-progress"
         style={{ '--dash': dash, '--circumference': circumference }}
         preserveAspectRatio="none"
         fill="transparent"
@@ -63,7 +63,7 @@ const Bar = ({ prog, skillName, strImage }) => {
           </pattern>
         </defs>
         <circle
-          className="bg"
+          className="light-bg"
           cx={size / 2}
           cy={size / 2}
           r={radius}
@@ -73,7 +73,7 @@ const Bar = ({ prog, skillName, strImage }) => {
         <image x="-25" y="30" width="150" height="40" href={strImage} />
 
         <circle
-          className="progress-circle"
+          className="light-progress-circle"
           cx={size / 2}
           cy={size / 2}
           r={radius}

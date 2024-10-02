@@ -15,7 +15,7 @@
 }
 
 
-.proj{
+.light-proj{
     position: relative;
     /* display: flex; */
     max-width: 100% !important;
@@ -27,7 +27,7 @@
 
 }
 
-.h1-title h1{
+.light-h1-title h1{
     font-size: 6vw;
     text-align: center;
     font-family: font1;
@@ -38,7 +38,7 @@
     height: fit-content;
 }
 
-.h1-title{
+.light-h1-title{
   padding:0;
   height: 10%;
   width: fit-content;
@@ -47,7 +47,7 @@
 
 }
 
-.proj-row{
+.light-proj-row{
     height: 60% !important;
     width: 85% ;
     position: relative;
@@ -60,7 +60,7 @@
     align-items: flex-end;
 }
 
-.card{
+.light-card{
   height: 65%;
   width: 22%;
     background: rgb(255, 255, 255);
@@ -78,22 +78,22 @@
 }
 
 
-#card1, #card4{
+#light-card1, #light-card4{
  bottom:20%;
 
 }
 
-#card2, #card3{
+#light-card2, #light-card3{
   bottom:-10%;
 }
 
-.card.in-view {
+.light-card.in-view {
     opacity: 1;
     transform: translateY(0); /* Return to normal position */
 }
 
   
-  .card video {      
+  .light-card video {      
     width: 100%;
     height: 85% !important;
     background-color: #33174377;
@@ -102,7 +102,7 @@
   }
 
 
-  .card__overlay {
+  .light-card__overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -115,11 +115,11 @@
     height: fit-content;
   }
   
-  .card:hover .card__overlay {
+  .light-card:hover .light-card__overlay {
     transform: translateY(0);
   }
   
-  .card__header {
+  .light-card__header {
     position: relative;
     display: flex;
     align-items: center;
@@ -134,12 +134,12 @@
   }
      
   
-  .card:hover .card__header {
+  .light-card:hover .light-card__header {
     transform: translateY(0);
   }
 
   
-  .card__title {
+  .light-card__title {
     font-size: 1.4vw;
     margin: 0 ;
     color: #000000;
@@ -148,7 +148,7 @@
   }
 
   
-  .card__description {
+  .light-card__description {
     padding: 0 10%;
     margin: 0;
     color: #000000;
@@ -162,14 +162,14 @@
     font-size: 1vw;
   }    
 
-.card:hover{
+.light-card:hover{
   box-shadow: rgba(40, 19, 50, 0.518) 0px 20px 30px;
     /* box-shadow: rgba(37, 14, 53, 0.776) 0px 12px 28px 0px,
     rgba(20, 9, 32, 0.792) 0px 2px 4px 0px; */
 
 }
 
-.cross3{
+.light-cross3{
     width: 2%;
     height: 20%;
     position: absolute;
@@ -178,7 +178,7 @@
     opacity: 0.8;
   }
   
-  .circle4{
+  .light-circle4{
     width: 14%;
     height: 27%;
     position: absolute;
@@ -189,7 +189,7 @@
   
   }
   
-  .square{
+  .light-square{
     width: 8%;
     height: 10%;
     position: absolute;
@@ -200,7 +200,7 @@
   
   }
   
-  .circle{
+  .light-circle{
     width: 10%;
     height: 6%;
     position: absolute;

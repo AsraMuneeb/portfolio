@@ -15,11 +15,11 @@
 
 
 
-.skill-name {
+.light-skill-name {
     font-family: font3;
 }
 
-.main {
+.light-main {
     width: 90%;
     height: 75%;
     position: relative;
@@ -28,7 +28,7 @@
     flex-direction: row;
 }
 
-.circle1{
+.light-circle1{
     position: absolute;
     left:-8%;
     bottom:-10%;
@@ -37,7 +37,7 @@
     opacity: 0.8;
 }
 
-.sqr{
+.light-sqr{
     position: absolute;
     left:0%;
     top:7%;
@@ -46,7 +46,7 @@
     opacity: 0.7;
 }
 
-.cross2{
+.light-cross2{
     position: absolute;
     right:0;
     bottom:-10%;
@@ -55,7 +55,7 @@
     opacity: 0.7;
 }
 
-.circle2{
+.light-circle2{
     position: absolute;
     right:0;
     top:2%;
@@ -64,7 +64,7 @@
     opacity: 0.7;
 }
 
-.col2 {
+.light-col2 {
     /* flex-basis: 30%; 
     width: 30%;  */
     display: flex;
@@ -76,7 +76,7 @@
     flex:1.5;
 }
 
-.col1 {
+.light-col1 {
     /* flex-basis: 28%; 
     width: 28% ; */
     height: 85%;
@@ -90,31 +90,31 @@
 }
 
 @media (max-width:800px) {
-    .row1{
+    .light-row1{
         flex-direction: column;
         flex-flow: column;
         align-items: center;
     }
-    .col1{
+    .light-col1{
         flex:1;
         width: 65%;
         top:0;
        
     }
-    .col2{
+    .light-col2{
         flex:1;
         width: 85% !important;
         z-index: 10;
     }
     
-  .frame1::before{
+  .light-frame1::before{
     right: -3% !important;
     top: 17%;
     height: 83% !important;
     width: 83% !important;
 
   }
-  .title h1{
+  .light-title h1{
     top: 50% !important;
     font-size: 7vw !important;
     left: 45%;
@@ -122,7 +122,7 @@
   }
 }
 
-.row1 {
+.light-row1 {
     width: 100%;
     padding: 0;
     margin: auto;
@@ -132,7 +132,7 @@
 }
 
 
-.title h1 {
+.light-title h1 {
     font-size: 5vw;
     text-align: center;
     font-family: font1;
@@ -149,7 +149,7 @@
 
 }
 
-.pc{
+.light-pc{
     height: 80%;
     width: 75%;
     position: absolute;
@@ -159,7 +159,7 @@
 
 }
 
-.frame1 {
+.light-frame1 {
     width: 70%;
     height: 100%;
     position: absolute;
@@ -174,7 +174,7 @@ box-shadow: inset 10px 10px 14px 20px rgba(255,255,255,1);
 } 
 
 
-  .frame1::before{
+  .light-frame1::before{
     content:'';
     background: transparent;
     width: 88%;
@@ -190,7 +190,7 @@ box-shadow: inset 10px 10px 14px 20px rgba(255,255,255,1);
 
   } 
 
-.image3{
+.light-image3{
     height: 80%;
     width: 75%;
     bottom:4%;
@@ -199,7 +199,7 @@ box-shadow: inset 10px 10px 14px 20px rgba(255,255,255,1);
     right:4%;
 }
 
-.wind{
+.light-wind{
     height: 100%;
     width: 100%;
     position: absolute;

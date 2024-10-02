@@ -13,7 +13,7 @@
   src:url(../assets/fonts/Raleway-Medium.ttf);
   }
 
-.about-section {
+.light-about-section {
     /* background-color: #fff; */
     position: relative;
     display: flex;
@@ -27,7 +27,7 @@
     overflow: hidden;
   }
   
-.prop2{
+.light-prop2{
   width: 8%;
   height: 26%;
   position: absolute;
@@ -37,7 +37,7 @@
   opacity: 0.8;
 }
 
-.prop1{
+.light-prop1{
   width: 7%;
   height: 12%;
   position: absolute;
@@ -45,7 +45,7 @@
   top: 25%;
 }
 
-.prop4{
+.light-prop4{
   width: 6%;
   height: 12%;
   position: absolute;
@@ -56,7 +56,7 @@
 
 }
 
-.prop5{
+.light-prop5{
   width: 23%;
   height: 8%;
   position: absolute;
@@ -67,7 +67,7 @@
 
 }
 
-.prop3{
+.light-prop3{
   width: 1.5%;
   height: 18%;
   position: absolute;
@@ -76,7 +76,7 @@
   z-index: 99;
 }
 
-.row-about{
+.light-row-about{
     display: flex;
     max-width: 75%;
     height: 100%;
@@ -86,31 +86,31 @@
 }
 
 @media (max-width: 700px) {
-    .row-about{
+    .light-row-about{
       flex-direction: column;
       flex-flow: column;
     }
-    .vid{
+    .light-vid{
       flex:2;
       height: 50%;
       width:90%;
     }
-    .about-content{
+    .light-about-content{
       flex:1;
       height:30%;
       max-width: 90%;
       align-content: center;
     }
-    .about-content p{
+    .light-about-content p{
       font-size: 2.8vw !important;
     }
-    .row-about h2{
+    .light-row-about h2{
       font-size: 9vw !important;
       left: 1% !important;
       top: 5% !important;
 
     }
-    .web{
+    .light-web{
       width: 10% !important;
       height: 10% !important;
       bottom: 35% !important;
@@ -120,7 +120,7 @@
   
 }
 
-.vid img {
+.light-vid img {
   width: 70%;
   height: 80%;
   border-top-right-radius: 30%;
@@ -129,7 +129,7 @@
   box-shadow: rgba(37, 14, 53, 0.3) 0px 19px 38px, rgba(30, 14, 49, 0.22) 0px 15px 12px;
 } 
 
-.frame{
+.light-frame{
   background: transparent;
   width: 70%;
   height: 80%;
@@ -143,7 +143,7 @@
   top:7%;
 } 
 
-.row-about h2 {
+.light-row-about h2 {
   background: -webkit-linear-gradient( black, #271638, #a84d76);
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -158,7 +158,7 @@
   width: fit-content;
 }
 
-.about-content p {
+.light-about-content p {
   font-size: 1.5vw;
   color: #555;
   padding: 0;
@@ -167,12 +167,12 @@
   
 }
 
-.about-content{
+.light-about-content{
   padding: 0;
   position: relative;
 }
   
-.vid{
+.light-vid{
   height: 100%;
   max-width: 100%;
   padding:0;
@@ -183,7 +183,7 @@
 }
 
 
-.web{
+.light-web{
   width: 20%;
   height: 20%;
   display: inline;

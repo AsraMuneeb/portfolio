@@ -13,6 +13,8 @@ import DarkAbout from './components/dark/About';
 import DarkTools from './components/dark/Tools';
 import DarkProjects from './components/dark/Projects';
 import DarkContact from './components/dark/Contact';
+import frm2 from './assets/frm2.png'
+import frm1 from './assets/frm1.png'
 
 function App() {
 
@@ -60,6 +62,9 @@ function App() {
 
   return (
     <div className='app'>
+      {isDarkMode ? <> <img src={frm1} className='frm1' alt="" />
+      <img src={frm1} className='frm11' alt="" />
+      <img src={frm2} className='frm2' alt="" /> </>: undefined}
         <NavBar activeSection={activeSection}></NavBar>
         <label class="switch">
   <input type="checkbox" checked={isDarkMode} onChange={handleThemeSwitch}/>

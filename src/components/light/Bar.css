@@ -1,4 +1,4 @@
-.skill {
+.light-skill {
   width: 23%;
   display: flex;
   flex-direction: column;
@@ -8,37 +8,37 @@
 }
 
 @media (max-width: 800px) {
-  .skill{
+  .light-skill{
     width: 25%;
     height: 50%;
     justify-content: center;
 
   }
-  .circular-progress {
+  .light-circular-progress {
     --size: 70px !important; /* Initial size */
     --stroke-width: 15px !important; /* Initial stroke width */
   }
-  .skill-name {
+  .light-skill-name {
     top: 8% !important;
   }
-  .skill-name p {
+  .light-skill-name p {
     font-size: 2vw !important;
   }
 }
 
-.skill-name {
+.light-skill-name {
   color: black;
   position: relative;
   z-index: 10;
   top: 5%;
 }
 
-.skill-name p {
+.light-skill-name p {
   font-family: font3;
   font-size: 1.5vw;
 }
 
-.circular-progress {
+.light-circular-progress {
   --size: 100px; /* Initial size */
   --stroke-width: 15px; /* Initial stroke width */
   --radius: calc((var(--size) - var(--stroke-width)) / 2); /* Calculate radius */
@@ -50,7 +50,7 @@
   overflow: visible;
 }
 
-.circular-progress .progress-circle {
+.light-circular-progress .light-progress-circle {
   transition: stroke-dasharray 3s ease; /* Ensure 3s transition for the progress bar */
   stroke-dasharray: var(--dash) calc(var(--circumference) - var(--dash));
   stroke-linecap: round;
@@ -59,7 +59,7 @@
 }
 
 /* Hover effect to increase size and stroke width */
-.circular-progress:hover {
+.light-circular-progress:hover {
   --size: 110px; /* Increase size on hover */
   --stroke-width: 16px; /* Increase stroke width on hover */
   overflow: visible;
@@ -67,7 +67,7 @@
 }
 
 
-.circular-progress .bg {
+.light-circular-progress .light-bg {
   stroke: rgb(236, 220, 224); /* Semi-transparent background stroke */
   fill: white;
   stroke-width: var(--stroke-width);

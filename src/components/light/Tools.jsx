@@ -20,14 +20,14 @@ import './Tools.css'
 
 const Tools = () => {
   return (
-      <Container className='main'>
-        <img src={circle1} className='circle1' alt="" />
-        <img src={sqr} className='sqr' alt="" />
-        <img src={cross2} className='cross2' alt="" />
-        <img src={circle2} className='circle2' alt="" />
-        <Row className='title'><h1>Technical <br />Skills</h1></Row>
-        <Row className='row1'>
-          <Col className='col2'>
+      <Container className='light-main'>
+        <img src={circle1} className='light-circle1' alt="" />
+        <img src={sqr} className='light-sqr' alt="" />
+        <img src={cross2} className='light-cross2' alt="" />
+        <img src={circle2} className='light-circle2' alt="" />
+        <Row className='light-title'><h1>Technical <br />Skills</h1></Row>
+        <Row className='light-row1'>
+          <Col className='light-col2'>
             <Bar strImage={logoHtml} skillName='HTML' prog={70}></Bar>
             <Bar strImage={logoCss} skillName='CSS' prog={70}></Bar>
             <Bar strImage={logoJs} skillName='javaScript' prog={70}></Bar>
@@ -37,10 +37,10 @@ const Tools = () => {
             <Bar strImage={logoSql} skillName='SQL' prog={70}></Bar>
             <Bar strImage={logoSql} skillName='Figma' prog={50}></Bar>
           </Col>
-          <Col className='col1'> 
-          <div className="frame1"></div>
-          <img src={pc1} className='pc' alt="" />
-          <div className="image3"><img src={wind} className='wind' alt="" /></div>
+          <Col className='light-col1'> 
+          <div className="light-frame1"></div>
+          <img src={pc1} className='light-pc' alt="" />
+          <div className="light-image3"><img src={wind} className='light-wind' alt="" /></div>
           </Col>
         </Row>
       </Container>

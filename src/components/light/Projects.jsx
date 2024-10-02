@@ -17,9 +17,9 @@ const Projects = () => {
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add('in-view');
+                        entry.target.classList.add('light-in-view');
                     } else {
-                        entry.target.classList.remove('in-view');
+                        entry.target.classList.remove('light-in-view');
                     }
                 });
             },
@@ -27,7 +27,7 @@ const Projects = () => {
         );
 
        
-        const cards = document.querySelectorAll('.card');
+        const cards = document.querySelectorAll('.light-card');
         cards.forEach((card) => {
             observer.observe(card);
         });
@@ -35,55 +35,54 @@ const Projects = () => {
         return () => observer.disconnect();
     }, []);
     return (
-        <Container className='proj'>
-            <img src={circle4} className='circle4' alt="" />
-            <img src={circle} className='circle'alt="" />
-            <img src={cross3} className='cross3'alt="" />
-            <img src={square} className='square'alt="" />
-            <Row className='proj-row'> 
-            <Row className='h1-title'>
-           
+        <Container className='light-proj'>
+            <img src={circle4} className='light-circle4' alt="" />
+            <img src={circle} className='light-circle'alt="" />
+            <img src={cross3} className='light-cross3'alt="" />
+            <img src={square} className='light-square'alt="" />
+            <Row className='light-proj-row'> 
+            <Row className='light-h1-title'>
+    
      <h1>Projects</h1>
-     {/* <video src={web} autoPlay loop muted></video> */}
-     {/* <img src={pc} alt="" /> */}
+
      </Row>
 
-     <div className="card" id='card1'>
+     <div className="light-card" id='light-card1'>
         <video src={logistics} loop autoPlay muted></video>
-      <div className="card__overlay">
-        <div className="card__header">
-          <div className="card__header-text">
-            <h2 className="card__title">Logistics Management</h2>            
+      <div className="light-card__overlay">
+        <div className="light-card__header">
+          <div className="light-card__header-text">
+            <h2 className="light-card__title">Logistics Management</h2>            
           </div>
         </div>
-        <div className="card__description">
+        <div className="light-card__description">
         <p>Created a responsive UI and built an admin dashboard using HTML, CSS, and Bootstrap, seamlessly integrating with Django and SQLite.</p>
         </div>
       </div>
     </div>   
 
-    <div className="card" id='card2'>
+    <div className="light-card" id='light-card2'>
     <video src={invent} loop autoPlay muted></video>
-    <div className="card__overlay">
-        <div className="card__header">
-          <div className="card__header-text">
-            <h2 className="card__title">Inventory Management</h2>            
+    <div className="light-card__overlay">
+        <div className="light-card__header">
+          <div className="light-card__header-text">
+            <h2 className="light-card__title">Inventory Management</h2>            
           </div>
         </div>
-        <div className="card__description">
+        <div className="light-card__description">
         <p>Designed and developed the dashboard using PHP, JavaScript, HTML, CSS, and Bootstrap for seamless inventory tracking and management.</p>
         </div>
       </div>
     </div>  
-    <div className="card" id='card3'>
+    <div className="light-card" id='light-card3'>
     <video src={clone} loop autoPlay muted></video>
-      <div className="card__overlay">
-        <div className="card__header">
-          <div className="card__header-text">
-            <h2 className="card__title">Netflix Clone</h2>            
+      <div className="light-card__overlay">
+        <div className="light-card__header">
+          <div className="light-card__header-text">
+            <h2 className="light-card__title">Netflix Clone</h2>            
           </div>
         </div>
-        <div className="card__description">
+        <div className="light-card__description">
         <p>Developed a Netflix clone using React.js, HTML, and CSS to
                         replicate the streaming platform's user interface and
                         functionality.</p>
@@ -91,15 +90,15 @@ const Projects = () => {
       </div>
     </div>  
 
-    <div className="card" id='card4'>
+    <div className="light-card" id='light-card4'>
     <video src={tic} loop autoPlay muted></video>
-      <div className="card__overlay">
-        <div className="card__header">
-          <div className="card__header-text">
-            <h2 className="card__title">Tic-Tac-Toe</h2>            
+      <div className="light-card__overlay">
+        <div className="light-card__header">
+          <div className="light-card__header-text">
+            <h2 className="light-card__title">Tic-Tac-Toe</h2>            
           </div>
         </div>
-        <div className="card__description">
+        <div className="light-card__description">
         <p>A classic Tic-Tac-Toe game built using JavaScript, React, HTML, and CSS, featuring a clean UI with responsive interactions and dynamic game logic to track player moves and declare the winner.</p>
         </div>
       </div>
