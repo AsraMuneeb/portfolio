@@ -29,10 +29,11 @@ React-Bootstrap and CSS media queries were used to ensure the website adapts per
 6. Dynamic Light/Dark Theme
 Users can switch between light and dark themes, which is implemented using the useState hook to toggle the appropriate CSS classes dynamically. This feature enhances user experience by allowing them to personalize the appearance of the site.
 
-7. Interactive UI with React-Bootstrap
+
+8. Interactive UI with React-Bootstrap
 To improve the user interface, I used React-Bootstrap components such as buttons, modals, and navbars. These pre-styled components enabled a clean and intuitive design while saving development time.
 
-8. Optimized for Performance
+9. Optimized for Performance
 The website is optimized for speed and performance, with careful attention to clean, modular code. Features such as lazy-loading images and reducing unnecessary re-renders were implemented to enhance the site's efficiency.
 
 📦 Installation & Setup
