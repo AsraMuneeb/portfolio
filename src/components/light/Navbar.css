@@ -1,11 +1,11 @@
 @font-face{
     font-family: font3;
-    src:url(../assets/fonts/Raleway-Medium.ttf);
+    src:url(../../assets/fonts/Raleway-Medium.ttf);
     }
   
     @font-face{
         font-family: font1;
-        src: url(../assets/fonts/Lobster-Regular.ttf);
+        src: url(../../assets/fonts/Lobster-Regular.ttf);
       }
    
 
