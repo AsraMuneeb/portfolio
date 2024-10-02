@@ -1,20 +1,20 @@
 
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import logoBoot from '.../assets/logo-boot.png';
-import logoCss from '.../assets/logo-css.png';
-import logoHtml from '.../assets/logo-html.gif';
-import logoJs from '.../assets/logo-js.png';
-import logoPython from '.../assets/logo-python.gif';
-import logoReact from '.../assets/logo-react.png';
-import logoSql from '.../assets/logo-sql.png';
-import pc1 from '.../assets/pc1.png';
-import wind from '.../assets/wind.png';
+import logoBoot from '../../assets/logo-boot.png';
+import logoCss from '../../assets/logo-css.png';
+import logoHtml from '../../assets/logo-html.gif';
+import logoJs from '../../assets/logo-js.png';
+import logoPython from '../../assets/logo-python.gif';
+import logoReact from '../../assets/logo-react.png';
+import logoSql from '../../assets/logo-sql.png';
+import pc1 from '../../assets/pc1.png';
+import wind from '../../assets/wind.png';
 import Bar from './Bar.jsx'
-import circle1 from '.../assets/circle1.png';
-import sqr from '.../assets/sqr.png';
-import cross2 from '.../assets/cross2.png';
-import circle2 from '.../assets/circle2.png';
+import circle1 from '../../assets/circle1.png';
+import sqr from '../../assets/sqr.png';
+import cross2 from '../../assets/cross2.png';
+import circle2 from '../../assets/circle2.png';
 
 import './Tools.css'
 

@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './Contact.css';
-import web1 from '../assets/web1.gif';
+import web1 from '../../assets/web1.gif';
 import { Container, Row, Col } from 'react-bootstrap';
-import fb from '../assets/fb.png';
-import insta from '../assets/insta.png';
-import linkdin from '../assets/linkdin.png';
-import mail from '../assets/mail.png';
-import phone from '../assets/phone.png';
-import thankyou from '../assets/thankyou.png'
+import fb from '../../assets/fb.png';
+import insta from '../../assets/insta.png';
+import linkdin from '../../assets/linkdin.png';
+import mail from '../../assets/mail.png';
+import phone from '../../assets/phone.png';
+import thankyou from '../../assets/thankyou.png'
 
 
 const Contact = () => {

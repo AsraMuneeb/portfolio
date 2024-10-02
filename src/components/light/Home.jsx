@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import './Home.css'
-import img2 from '.../assets/img2.png'
+import img2 from '../../assets/img2.png'
 import { useRef } from 'react';
 const Home = () => {
   const home = useRef(null)

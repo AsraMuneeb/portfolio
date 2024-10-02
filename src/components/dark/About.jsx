@@ -1,14 +1,14 @@
 import React from 'react'
 import './About.css'
 import { Container, Row, Col } from 'react-bootstrap';
-import web from '../assets/web.gif'
-import arrow1 from '../assets/arrow.png'
-import cross from '../assets/cross.png'
-import sqr1 from '../assets/sqr1.png'
-import circle from '../assets/scircle.png'
-import waves1 from '../assets/waves1.png'
+import web from '../../assets/web.gif'
+import arrow1 from '../../assets/arrow.png'
+import cross from '../../assets/cross.png'
+import sqr1 from '../../assets/sqr1.png'
+import circle from '../../assets/scircle.png'
+import waves1 from '../../assets/waves1.png'
 
-import profile3 from '../assets/profile3.jpg'
+import profile3 from '../../assets/profile3.jpg'
 
 
 

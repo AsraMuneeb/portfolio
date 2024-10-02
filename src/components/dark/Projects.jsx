@@ -1,15 +1,14 @@
 import React, { useEffect } from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import './Projects.css'
-import circle4 from '../assets/fcircle.png'
-import circle from '../assets/single.png'
-import cross3 from '../assets/cross3.png'
-import square from '../assets/sqr1.png'
-import invent from '../assets/inventory.mp4'
-import logistics from '../assets/logistics.mp4'
-import tic from '../assets/tic.mp4'
-import clone from '../assets/clone.mp4'
-import pc from '../assets/pc.gif'
+import circle4 from '../../assets/fcircle.png'
+import circle from '../../assets/single.png'
+import cross3 from '../../assets/cross3.png'
+import square from '../../assets/sqr1.png'
+import invent from '../../assets/inventory.mp4'
+import logistics from '../../assets/logistics.mp4'
+import tic from '../../assets/tic.mp4'
+import clone from '../../assets/clone.mp4'
 
 const Projects = () => {
     useEffect(() => {
