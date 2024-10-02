@@ -87,7 +87,7 @@
   bottom:-10%;
 }
 
-.light-card.in-view {
+.light-card.light-in-view {
     opacity: 1;
     transform: translateY(0); /* Return to normal position */
 }
@@ -164,8 +164,6 @@
 
 .light-card:hover{
   box-shadow: rgba(40, 19, 50, 0.518) 0px 20px 30px;
-    /* box-shadow: rgba(37, 14, 53, 0.776) 0px 12px 28px 0px,
-    rgba(20, 9, 32, 0.792) 0px 2px 4px 0px; */
 
 }
 
@@ -207,5 +205,4 @@
     right: 10%;
     bottom: 10%;
     opacity: 0.8;
-    
   }
