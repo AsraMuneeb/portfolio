@@ -140,7 +140,7 @@
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  transition: background-color var(--transDur), transform var(--transDur);
+  transition: background-color 0.5s, transform 0.5s;
 }
 
 .theme__toggle:checked {
@@ -161,5 +161,5 @@
   color: white;
   text-align: center;
   font-family: font3;
-  font-size: 1vw;
+  font-size: 0.9vw;
 }

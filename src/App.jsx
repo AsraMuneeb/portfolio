@@ -19,8 +19,8 @@ import frm1 from './assets/frm1.png'
 
 function App() {
 
-  const [activeSection, setActiveSection] = useState('home'); // Track the active section
-  const [isDarkMode, setIsDarkMode] = useState(false); // State to track theme
+  const [activeSection, setActiveSection] = useState('home'); 
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
@@ -29,7 +29,6 @@ function App() {
     }
   }, []);
 
-  // Save the user's theme preference in localStorage
   useEffect(() => {
     localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
   }, [isDarkMode]);
@@ -40,13 +39,13 @@ function App() {
   useEffect(() => {
     const sections = document.querySelectorAll('section');
     const options = {
-      threshold: 0.5, // 50% of the section needs to be visible to trigger
+      threshold: 0.5, 
     };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          setActiveSection(entry.target.id); // Set the active section
+          setActiveSection(entry.target.id);
         }
       });
     }, options);

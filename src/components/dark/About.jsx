@@ -25,7 +25,6 @@ const About = () => {
       <Row className='row-about'>
       <h2>About <br />Me</h2> 
       <Col className='vid' >
-          {/* <video src={profile} loop autoPlay muted></video> */}
             <img src={profile3} alt="" />
             <div className="frame"></div>
         </Col>

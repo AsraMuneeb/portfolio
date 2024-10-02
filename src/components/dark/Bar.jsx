@@ -14,7 +14,7 @@ const Bar = ({ prog, skillName, strImage }) => {
           setProgress(0); 
         }
       },
-      { threshold: 0.5 } // Trigger animation when 50% of the element is in view
+      { threshold: 0.5 } 
     );
 
     if (skillsRef.current) {

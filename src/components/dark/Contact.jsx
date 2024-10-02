@@ -135,7 +135,6 @@ const Contact = () => {
         </Col>
       </Row>
 
-      {/* Thank You Card Overlay */}
       {submitted && (
   <div className={`thank-you-card ${isHidden ? 'hidden' : 'show'}`}>
     <img src={thankyou} alt="" />

@@ -73,8 +73,8 @@
   text-decoration: none;
   opacity: 0;
   position: relative;
-    transform: translateY(100px); /* Start below */
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
+    transform: translateY(100px); 
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; 
 }
 
 
@@ -89,7 +89,7 @@
 
 .light-card.light-in-view {
     opacity: 1;
-    transform: translateY(0); /* Return to normal position */
+    transform: translateY(0); 
 }
 
   

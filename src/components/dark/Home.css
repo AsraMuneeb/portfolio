@@ -93,12 +93,14 @@ color: #ffffff;
 font-size: 0.8vw;
 transition: background-color 0.3s;
 height: 8%;
-width: 20%;
+width: 18%;
+border-width: 2px;
 }
 
 .btn-custom:hover {
-color: #f28ea8;
-border-color: #f28ea8;
+color:#eaadb5;
+border-color:#eaadb5;
+background-color: rgba(38, 34, 35, 0.568);
 }
 
 .image{
