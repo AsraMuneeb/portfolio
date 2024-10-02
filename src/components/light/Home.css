@@ -130,18 +130,35 @@ border-color: #f28ea8;
     50%  { transform: translate(0, 15px); }
     100%   { transform: translate(0, -0px); }    
 }
-
-.name{
+/* 
+.light-name{
     width: 0ch;
     color: #eaadb5;
     border-right: 4px solid white;
     white-space: nowrap;
     overflow: hidden;
     display: block;
-    animation: typing 3s steps(11, end) infinite forwards;
+    animation: typing 5s steps(11, end) infinite forwards;
 }
 
 @keyframes typing {
-    0%{width: 0ch;}
-    50%{width: 10ch;}
+    0% { width: 0ch; }
+    100% { width: 10ch; } 
+} */
+
+.light-name {
+    width: 0ch;
+    color: #eaadb5;
+    border-right: 4px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    animation: typing 4s steps(11, end) infinite forwards; /* Separate animations for typing and delay */
 }
+
+@keyframes typing {
+    0% { width: 0ch; }
+    100% { width: 10ch; } 
+}
+
+

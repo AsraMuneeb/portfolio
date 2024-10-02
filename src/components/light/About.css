@@ -123,8 +123,9 @@
 .light-vid img {
   width: 70%;
   height: 80%;
-  border-top-right-radius: 30%;
-  border-bottom-left-radius: 30%;
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 40%;
+  border-bottom-left-radius: 40%;
   position: relative;
   box-shadow: rgba(37, 14, 53, 0.3) 0px 19px 38px, rgba(30, 14, 49, 0.22) 0px 15px 12px;
 } 
@@ -133,9 +134,10 @@
   background: transparent;
   width: 70%;
   height: 80%;
-  border-top-right-radius: 30%;
-  border-bottom-left-radius: 30%;
-  border-color:#954859 !important;
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-color:#f79eb3 !important;
   position: absolute;
   z-index: 0;
   border: 4px solid;
@@ -149,8 +151,8 @@
   -webkit-text-fill-color: transparent;
   font-size: 6vw;
   position: absolute;
-  top: 5%;
-  left: 33%;
+  top: 9%;
+  left: 37%;
   line-height: 0.9;
   font-family: font1;
   font-stretch: extra-expanded;

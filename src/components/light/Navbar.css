@@ -37,6 +37,7 @@
     padding-right: 5%;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 
@@ -48,11 +49,10 @@ font-family: font1;
 
 .navbar-custom .nav-link {
 color: #fff ; 
-padding: 0;
-padding: 0 !important;
 font-family: font3;
-padding-bottom:0px;
+padding: 0.5rem 1rem;
 font-size: 1.2vw;
+transition: color 0.3s ease-in-out;
 }
 
 
@@ -71,15 +71,45 @@ color: rgb(241, 192, 192);
 .navbar-toggler-icon{
    width: 90%;
    height: 90%;
+
     background-color: #f19caa;
 }
 
-.toggler{
+
+
+.toggler {
     color: #f19caa;
     border-color: #f19caa;
     background-color: #f19caa;
-    height: 80%;
-    width: 10%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%; /* Rounded button */
     margin-right: 1%;
-    border-radius: 25px;
+}
+
+.toggler:hover{
+    background-color: #f19caa;
+}
+
+@media (max-width: 991px) {
+    .navbar-custom {
+        width: 100%;
+        left: 0;
+        padding: 10px 20px;
+    }
+
+    .navbar-custom .nav-link {
+        font-size: 2vw !important; /* Make links larger for mobile */
+        width: fit-content;
+        margin: 3% 5%;
+    }
+
+    .navbar-collapse {
+        margin: 2% 1%;
+        background-color: #25101acf;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+    }
 }

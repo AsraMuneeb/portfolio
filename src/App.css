@@ -1,3 +1,8 @@
+@font-face{
+  font-family: font3;
+  src:url(./assets/fonts/Raleway-Medium.ttf);
+  }
+
 .app{
   width: 100%;
   height: 500vh;
@@ -79,69 +84,6 @@
   display: inline-block;
 }
 
-.switch {
-  position: absolute;
-  width: 2.5%;
-  height: 2%;
-  top: 4%;
-  right: 3%;
-}
-
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #f4eeee;
-  -webkit-transition: .4s;
-  transition: .4s;
-  opacity: 0.8;
-  border: 1px solid white;
-
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 130%;
-  width: 60%;
-  left: -3%;
-  bottom: -12%;
-  background-color: rgb(153, 70, 103);
-  -webkit-transition: .4s;
-  transition: .4s;
-  opacity:1;
-}
-
-input:checked + .slider {
-  background: none;
-}
-
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(15px);
-  -ms-transform: translateX(15px);
-  transform: translateX(15px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
 
 .projects{
   width: 100%;
@@ -164,3 +106,60 @@ input:checked + .slider:before {
 }
 
 
+.theme {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  right:2%;
+  top:0.8%;
+}
+
+.theme__toggle-wrap {
+  margin: 0 0.75em;
+  position: relative;
+}
+
+.theme__toggle {
+  width: 45px;
+  height: 10px;
+  background-color: hsl(30, 25%, 98%);
+  border-radius: 20px;
+  padding: 0.25em;
+  appearance: none;
+  position: relative;
+  transition: background-color var(--transDur), transform var(--transDur);
+}
+
+.theme__toggle:before {
+  content: "";
+  width: 1.5em;
+  height: 1.5em;
+  background-color: hsl(336, 74%, 69%);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  transition: background-color var(--transDur), transform var(--transDur);
+}
+
+.theme__toggle:checked {
+  background-color: hsla(320, 20%, 97%, 0.45);
+}
+
+.theme__toggle:checked:before {
+  background-color: hsl(336, 88%, 84%);
+  transform: translateY(-50%) translateX(1.5em);
+}
+
+.theme__toggle:focus {
+  box-shadow: 0 0 0 0.125em var(--primary);
+  outline: transparent;
+}
+
+.cont{
+  color: white;
+  text-align: center;
+  font-family: font3;
+  font-size: 1vw;
+}

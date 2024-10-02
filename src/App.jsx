@@ -16,6 +16,7 @@ import DarkContact from './components/dark/Contact';
 import frm2 from './assets/frm2.png'
 import frm1 from './assets/frm1.png'
 
+
 function App() {
 
   const [activeSection, setActiveSection] = useState('home'); // Track the active section
@@ -62,14 +63,19 @@ function App() {
 
   return (
     <div className='app'>
-      {isDarkMode ? <> <img src={frm1} className='frm1' alt="" />
+      {isDarkMode ? <> 
       <img src={frm1} className='frm11' alt="" />
       <img src={frm2} className='frm2' alt="" /> </>: undefined}
         <NavBar activeSection={activeSection}></NavBar>
-        <label className="switch">
-  <input type="checkbox" checked={isDarkMode} onChange={handleThemeSwitch}/>
-  <span className="slider round"></span>
+
+<label for="theme" class="theme">
+	<span class="theme__toggle-wrap">
+		<input id="theme" class="theme__toggle" type="checkbox" role="switch" name="theme" value="dark"  checked={isDarkMode} onChange={handleThemeSwitch}>
+    </input>
+		</span>
+	<span className='cont'>{isDarkMode ? 'Dark' : 'Light'}</span>
 </label>
+
       <section className='home' id='home'>
       {isDarkMode ? <DarkHome /> : <Home />}
       </section>
