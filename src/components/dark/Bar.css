@@ -1,0 +1,75 @@
+.skill {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 35%;
+  align-items: center;
+  
+}
+
+@media (max-width: 800px) {
+  .skill{
+    width: 25%;
+    height: 50%;
+    justify-content: center;
+
+  }
+  .circular-progress {
+    --size: 70px !important; /* Initial size */
+    --stroke-width: 15px !important; /* Initial stroke width */
+  }
+  .skill-name {
+    top: 8% !important;
+  }
+  .skill-name p {
+    font-size: 2vw !important;
+  }
+}
+
+.skill-name {
+  color: rgb(247, 245, 245);
+  position: relative;
+  z-index: 10;
+  top: 5%;
+}
+
+.skill-name p {
+  font-family: font3;
+  font-size: 1.5vw;
+}
+
+.circular-progress {
+  --size: 100px; /* Initial size */
+  --stroke-width: 15px; /* Initial stroke width */
+  --radius: calc((var(--size) - var(--stroke-width)) / 2); /* Calculate radius */
+  --circumference: calc(var(--radius) * 2 * 3.1416); /* Calculate circumference */
+  --dash: 0; /* Initial dash value */
+  transition: width 0.3s ease, height 0.3s ease, stroke-width 0.3s ease, transform 0.3s ease; /* Hover transition */
+  width: var(--size);
+  height: var(--size);
+  overflow: visible;
+}
+
+.circular-progress .progress-circle {
+  transition: stroke-dasharray 3s ease; /* Ensure 3s transition for the progress bar */
+  stroke-dasharray: var(--dash) calc(var(--circumference) - var(--dash));
+  stroke-linecap: round;
+  fill: none;
+  stroke-width: var(--stroke-width);
+}
+
+/* Hover effect to increase size and stroke width */
+.circular-progress:hover {
+  --size: 110px; /* Increase size on hover */
+  --stroke-width: 16px; /* Increase stroke width on hover */
+  overflow: visible;
+  filter: drop-shadow(0px 7px 14px rgba(226, 71, 128, 0.409)) drop-shadow(0px 5px 5px rgba(237, 122, 153, 0.354)); 
+}
+
+
+.circular-progress .bg {
+  stroke: rgb(23, 9, 31); /* Semi-transparent background stroke */
+  fill: white;
+  stroke-width: var(--stroke-width);
+}

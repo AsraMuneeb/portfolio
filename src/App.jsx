@@ -1,12 +1,12 @@
 import { useState, useEffect} from 'react'
 import './App.css'
 import { Container, Row, Col } from 'react-bootstrap';
-import NavBar from './components/Navbar'
-import Home from './components/Home'
-import About from './components/About'
-import Tools from './components/Tools'
-import Projects from './components/Projects'
-import Contact from './components/Contact'
+import NavBar from './components/light/Navbar'
+import Home from './components/light/Home'
+import About from './components/light/About'
+import Tools from './components/light/Tools'
+import Projects from './components/light/Projects'
+import Contact from './components/light/Contact'
 
 
 function App() {

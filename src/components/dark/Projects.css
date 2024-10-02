@@ -1,0 +1,230 @@
+
+@font-face {
+    font-family: font1;
+    src: url(../assets/fonts/Lobster-Regular.ttf);
+}
+
+@font-face {
+    font-family: font2;
+    src: url(../assets/fonts/SofadiOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: font3;
+    src: url(../assets/fonts/Raleway-Medium.ttf);
+}
+
+
+.proj{
+    position: relative;
+    /* display: flex; */
+    max-width: 100% !important;
+    height: 100%;
+    /* justify-content: space-evenly;
+    align-items: center; */
+    padding:0;
+    margin:0;
+
+}
+
+.h1-title h1{
+    font-size: 6vw;
+    text-align: center;
+    font-family: font1;
+    background: -webkit-linear-gradient( left, rgb(255, 255, 255), #f7acb7);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white;
+    height: fit-content;
+}
+
+.h1-title{
+  padding:0;
+  height: 10%;
+  width: fit-content;
+  position: absolute;
+  top:0;
+
+}
+
+.proj-row{
+    height: 60% ;
+    width: 85% ;
+    position: relative;
+    padding: 0;
+    left: 8%;
+    top:20%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+@media (max-width:700px) {
+  .proj-row{
+    height: 80%;
+    flex-wrap: wrap;
+    top:10%;
+  }
+  .card{
+    height: 40% !important;
+    width: 40% !important;
+    bottom: 0!important;
+  }
+  .h1-title{
+    padding:0;
+    width: fit-content;
+    position: relative;
+    width: 100%;
+
+  }
+}
+
+.card{
+  height: 65%;
+  width: 22%;
+    background: rgb(255, 255, 255);
+    border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+    overflow: hidden;
+  border: 5px solid ;
+  border-color: #f7acb7;
+  padding:0;
+  text-decoration: none;
+  opacity: 0;
+  position: relative;
+    transform: translateY(100px); /* Start below */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
+}
+
+
+#card1, #card4{
+ bottom:20%;
+
+}
+
+#card2, #card3{
+  bottom:-10%;
+}
+
+.card.in-view {
+    opacity: 1;
+    transform: translateY(0); /* Return to normal position */
+}
+
+  
+  .card video {      
+    width: 100%;
+    height: 85% !important;
+    background-color: #33174377;
+    object-fit: fill;
+    padding:0;
+  }
+
+
+  .card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;      
+    border-radius: 40px 0px 0px 40px;    
+    background-color: white;      
+    transform: translateY(100%);
+    transition: .3s ease-in-out;
+    height: fit-content;
+  }
+  
+  .card:hover .card__overlay {
+    transform: translateY(0);
+  }
+  
+  .card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255); 
+    border-top: 5px solid #c66084;    
+    padding: 7%;
+    border-radius: 40px 0px 0px 40px;    
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+    overflow: hidden;
+  }
+     
+  
+  .card:hover .card__header {
+    transform: translateY(0);
+  }
+
+  
+  .card__title {
+    font-size: 1.4vw;
+    margin: 0 ;
+    color: #000000;
+    font-family: font3;
+    padding:0;
+  }
+
+  
+  .card__description {
+    padding: 0 10%;
+    margin: 0;
+    color: #000000;
+    font-family: font3;   
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4.5;
+    line-clamp: 4.5;
+    overflow: hidden;
+    font-size: 1vw;
+  }    
+
+.card:hover{
+  box-shadow: rgba(240, 119, 153, 0.579) 0px 12px 28px 0px, rgba(245, 124, 160, 0.601) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.cross3{
+    width: 2%;
+    height: 20%;
+    position: absolute;
+    left: 4%;
+    bottom: 5%;
+    opacity: 0.8;
+    z-index: 0;
+  }
+  
+  .circle4{
+    width: 12%;
+    height: 17%;
+    position: absolute;
+    right: 10%;
+  bottom: 5%;
+    z-index: 99;
+    opacity: 0.9;
+    z-index: 0;
+
+  }
+  
+  .square{
+    width: 8%;
+    height: 8%;
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    z-index: 99;
+    opacity: 0.9;
+  
+  }
+  
+  .circle{
+    width: 14%;
+    height: 28%;
+    position: absolute;
+    left: -5%;
+    top: 5%;
+    opacity: 1;
+    
+  }
