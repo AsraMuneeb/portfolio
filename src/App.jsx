@@ -66,9 +66,9 @@ function App() {
       <img src={frm1} className='frm11' alt="" />
       <img src={frm2} className='frm2' alt="" /> </>: undefined}
         <NavBar activeSection={activeSection}></NavBar>
-        <label class="switch">
+        <label className="switch">
   <input type="checkbox" checked={isDarkMode} onChange={handleThemeSwitch}/>
-  <span class="slider round"></span>
+  <span className="slider round"></span>
 </label>
       <section className='home' id='home'>
       {isDarkMode ? <DarkHome /> : <Home />}

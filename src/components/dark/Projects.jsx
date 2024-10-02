@@ -43,8 +43,6 @@ const Projects = () => {
             <Row className='h1-title'>
            
      <h1>Projects</h1>
-     {/* <video src={web} autoPlay loop muted></video> */}
-     {/* <img src={pc} alt="" /> */}
      </Row>
 
      <div className="card" id='card1'>
